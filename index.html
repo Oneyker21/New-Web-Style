@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Tu Página Web</title>
+    <title>Salon Yulisa</title>
 </head>
 <header>
     <nav>
@@ -43,11 +43,27 @@
     <section id="citas">
         <h1>Solicitar una cita</h1>
         <p>¿Deseas programar una cita con nosotros? Llena el siguiente formulario.</p>
-        <!-- Formulario de citas -->
-        <form>
-            <!-- Campos del formulario -->
-        </form>
-        <!-- Contenido de la sección de citas -->
+        <input type="Submir" value="Crear Cita" id="NewCita">
+        <div class="popup2" id="popup2">
+            <div class="popup" id="popup">
+                <h2>Solicitar cita</h2>
+                <form>
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                    <input type="tel" placeholder="Número de teléfono">
+                    <input type="date" placeholder="Fecha">
+                    <input type="time" placeholder="Hora">
+                    <select>
+                        <option value="estilismo">Estilismo de cabello</option>
+                        <option value="manicura">Manicura y pedicura</option>
+                        <option value="maquillaje">Maquillaje</option>
+                    </select>
+                    <textarea placeholder="Especifica tus necesidades"></textarea>
+                    <input type="submit" id="enviarButton" value="Enviar">
+                    <input type="submit" id="closeButton" value="cerrar">
+                </form>
+            </div>
+        </div>
     </section>
 
     <section id="resenas">
