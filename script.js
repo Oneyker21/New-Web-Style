@@ -1,6 +1,5 @@
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav ul li a');
-const map = document.getElementById('map')
 const overlay = document.getElementById('popup2');
 const popup = document.getElementById('popup');
 const citasLink = document.getElementById('NewCita');
@@ -37,17 +36,7 @@ document.addEventListener('mousemove', function (e) {
 document.addEventListener('mouseup', function () {
     isDragging = false;
 });
-document.getElementById('map', function (e){
-    var coord = {lat:-34.5956145 ,lng: -58.4431949};
-    var map = new google.maps.Map(document.getElementById('map'),{
-        zoom: 10,
-        center: coord
-    });
-    var marker = new google.maps.Marker({
-        position: coord,
-        map: map
-      });
-});
+
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault(); // Evitar que el navegador siga el enlace
