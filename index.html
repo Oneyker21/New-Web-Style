@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,68 +18,75 @@
         </ul>
     </nav>
 </header>
-    <section id="inicio">
-        <h1>Bienvenido a nuestra página de inicio</h1>
-        <p>¡Gracias por visitarnos! Somos una empresa dedicada a...</p>
-    </section>
+<section id="inicio">
+    <h1>Bienvenido a nuestra página de inicio</h1>
+    <p>¡Gracias por visitarnos! Somos una empresa dedicada a...</p>
+</section>
 
-    <section id="contacto">
-        <h1>Contacto</h1>
-        <p>Estamos encantados de poder ponernos en contacto contigo.</p>
-        <address>
-            Dirección: Calle Principal, Ciudad
-            Teléfono: (123) 456-7890
-            Correo Electrónico: info@tupaginaweb.com
-        </address>
-    </section>
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Dirección: [Dirección]</p>
+    <p>Correo electrónico: [Correo electrónico]</p>
+    <!-- Mostrar las dos imágenes de tu portafolio -->
+    <div class="portafolio">
+        <img src="imagen1.jpg" alt="Portafolio 1">
+        <img src="imagen2.jpg" alt="Portafolio 2">
+    </div>
+</section>
 
-    <section id="galeria">
-        <h1>Galería de imágenes</h1>
-        <p>Explora nuestra galería de imágenes y descubre nuestro trabajo.</p>
-        <img src="imagen1.jpg" alt="Imagen 1">
-        <img src="imagen2.jpg" alt="Imagen 2">
-        <img src="imagen3.jpg" alt="Imagen 3">
-    </section>
+<section id="galeria">
+    <h1>Galería de imágenes</h1>
+    <div class="galeria">
+        <!-- Agregar imágenes de la galería-->
+    </div>
+</section>
 
-    <section id="citas">
-        <h1>Solicitar una cita</h1>
-        <p>¿Deseas programar una cita con nosotros? Llena el siguiente formulario.</p>
-        <input type="Submir" value="Crear Cita" id="NewCita">
-        <div class="popup2" id="popup2">
-            <div class="popup" id="popup">
-                <h2>Solicitar cita</h2>
-                <form>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="tel" placeholder="Número de teléfono">
-                    <input type="date" placeholder="Fecha">
-                    <input type="time" placeholder="Hora">
-                    <select>
-                        <option value="estilismo">Estilismo de cabello</option>
-                        <option value="manicura">Manicura y pedicura</option>
-                        <option value="maquillaje">Maquillaje</option>
-                    </select>
-                    <textarea placeholder="Especifica tus necesidades"></textarea>
-                    <input type="submit" id="enviarButton" value="Enviar">
-                    <input type="submit" id="closeButton" value="cerrar">
-                </form>
-            </div>
+<section id="citas">
+    <h1>Solicitar una cita</h1>
+    <p>¿Deseas programar una cita con nosotros? Llena el siguiente formulario.</p>
+    <input type="submit" value="Crear Cita" id="NewCita">
+    <div class="popup2" id="popup2">
+        <div class="popup" id="popup">
+            <h2>Solicitar cita</h2>
+            <form>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="tel" placeholder="Número de teléfono">
+                <input type="date" placeholder="Fecha">
+                <input type="time" placeholder="Hora">
+                <select>
+                    <option value="estilismo">Estilismo de cabello</option>
+                    <option value="manicura">Manicura y pedicura</option>
+                    <option value="maquillaje">Maquillaje</option>
+                </select>
+                <textarea placeholder="Especifica tus necesidades"></textarea>
+                <input type="submit" id="enviarButton" value="Enviar">
+                <input type="submit" id="closeButton" value="cerrar">
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="resenas">
-        <h1>Reseñas y testimonios</h1>
-        <p>Lee lo que nuestros clientes dicen sobre nosotros.</p>
-        <!-- Reseñas y testimonios -->
-        <div class="reseña">
-            <p>"Excelente servicio. Los recomiendo totalmente."</p>
-            <p>- Cliente Satisfecho</p>
+<section id="resenas">
+    <h1>Reseñas y testimonios</h1>
+    <p>Lee lo que nuestros clientes dicen sobre nosotros.</p>
+    <!-- Reseñas y testimonios -->
+    <main class="contenedor">
+        <div class="reseñas">
+            <!-- Contenido de reseñas -->
         </div>
-        <div class="reseña">
-            <p>"Me encantó la experiencia. ¡Volveré pronto!"</p>
-            <p>- Otra reseña feliz</p>
+        <div class="agregar-reseña">
+            <h3>Deja tu reseña</h3>
+            <form>
+                <input type="text" placeholder="Usuario">
+                <textarea placeholder="Escribe tu reseña"></textarea>
+                <input type="number" placeholder="Puntuación (1-5)" max="5" min="0">
+                <input type="submit" value="Enviar reseña">
+            </form>
         </div>
-    </section>
-    <script src="script.js"></script>
+    </main>
+</section>
+<script src="script.js"></script>
 </body>
+
 </html>
