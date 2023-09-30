@@ -7,15 +7,13 @@ body {
 
 header {
   background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
+  padding: 10px;
+  text-align: left;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
-  /* Para asegurarse de que esté por encima del contenido */
 }
 
 nav ul {
@@ -26,14 +24,27 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 20px;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  padding: 10px;
+  font-weight: bold;
   font-size: 18px;
+  border-radius: 50%;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+  transition: .5s;
 }
 
 /* Estilos para el formulario */
@@ -57,6 +68,7 @@ section {
 /* Estilos para la sección actual (puedes personalizar estos estilos) */
 #inicio {
   background-color: #f0f0f0;
+  display: block;
 }
 
 #contacto {
@@ -207,42 +219,103 @@ input[type="submit"]:hover {
 }
 
 #contacto {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 /* Estilos para la sección de contacto */
 .contacto {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 h2 {
-    font-size: 28px;
-    color: #333;
+  font-size: 28px;
+  color: #333;
 }
 
 .contacto p {
-    font-size: 16px;
-    color: #666;
-    margin: 10px 0;
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
 }
 
 .portafolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .portafolio img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.inicio-contactos {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contenido-principal {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.informacion-contacto h3,
+.redes-sociales h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.informacion-contacto p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+.redes-sociales a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.redes-sociales a:hover {
+  color: #ff6600;
 }
