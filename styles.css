@@ -35,16 +35,15 @@ nav ul li a {
   padding: 10px;
   font-weight: bold;
   font-size: 18px;
-  border-radius: 20px;
+  border-radius: 5px;
   margin-right: 0px;
   margin-left: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 nav ul li a:hover {
-  background-color: #666;
-  transition: .5s;
+  border-bottom: 2px solid #29c4bc;
 }
 
 /* Estilos para el formulario */
